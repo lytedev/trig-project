@@ -495,7 +495,6 @@ function solveComplete(tri)
 		else
 		{
 			addOutput("<span class='good'>Triangle Solved</span>:<p class='in'><i class='blu'>a</i> &asymp; <i>" + a + "</i><br /> <i class='ylw'>b</i> &asymp; <i>" + b + "</i><br /> <i class='good'>c</i> &asymp; <i>" + c + "</i><br /> <i>A</i> &asymp; <i>" + A + "&deg;</i><br /> <i>B</i> &asymp; <i>" + B + "&deg;</i><br /> <i>C</i> &asymp; <i>" + C + "&deg;</i></p>");	
-			addOutput("This work is not copyrighted. All source code is available <a href='source.zip'>here</a>.");
 		}
 		drawTriangle(tri);
 	}
