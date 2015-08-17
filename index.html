@@ -1,56 +1,66 @@
 <!doctype html>
 <html>
 <head>
-	<title>Triangle Solver - Daniel Flanagan</title>
+	<title>Triangle Solver - @lytedev</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<!--[if IE]> 
 		<script src="excanvas.compiled.js"></script> 
 	<![endif]-->
 </head>
-
 <body>
-<header>
-	<h1>Triangle Solver by Daniel Flanagan</h1>
-	<hr />
-</header>
-<p>Supply at least 3 of the following. If more than 3 are given, the first 3 will be used. 
-This could change the outcome of your triangle, so it is recommended to use only 3 variables. 
-None of them may be 0 or less, and no angle may be 180 or greater. Angles are measured in degrees.
-If one set of three variables fails, try using a different set of 3.</p>
-<p>If you aren't sure which variables you're given or which ones to input, take a look at <a href="triangle.png">this 
-image</a> explaining which variables represent different sides and angles in a triangle.</p>
-<p>All files concerning this project may be found <a href="source.zip">here</a>. This project has no copyright or license.</p>
-<hr />
-<canvas id="triangle" width="490" height="194"></canvas>
-<table>
-<tr>
-<td>Side <i class="blu">a</i></td>
-<td><input type="text" id="a" value="" onchange="solve()"></td>
-</tr>
-<tr>
-<td>Side <i class="ylw">b</i></td>
-<td><input type="text" id="b" value="" onchange="solve()"></td>
-</tr>
-<tr>
-<td>Side <i class="good">c</i></td>
-<td><input type="text" id="c" value="" onchange="solve()"></td>
-</tr>
-<tr>
-<td>Angle <i>A</i> </td>
-<td><input type="text" id="A" value="" onchange="solve()"></td>
-</tr>
-<tr>
-<td>Angle <i>B</i> </td>
-<td><input type="text" id="B" value="" onchange="solve()"></td>
-</tr>
-<tr>
-<td>Angle <i>C</i> </td>
-<td><input type="text" id="C" value="" onchange="solve()"></td></tr>
-</table>
-<hr />
-<div id="output">
-Currently <span class="bad">Offline</span>. For some reason, the script is broken!
-</div>
-<script type="application/javascript" src="script.js"></script>
+  <header>
+    <h1>Triangle Solver by <a href="https://github.com/lytedev">@lytedev</a></h1>
+    <hr />
+  </header>
+
+  <p>
+    Supply at least 3 of the following. If more than 3 are given, the first 3 will be used.  This could change the outcome of your triangle, so it is recommended to use only 3 variables.  None of them may be 0 or less, and no angle may be 180 or greater. Angles are measured in degrees.  If one set of three variables fails, try using a different set of 3.
+  </p>
+
+  <p>
+    If you aren't sure which variables you're given or which ones to input, take a look at <a href="triangle.png">this image</a> explaining which variables represent different sides and angles in a triangle.
+  </p>
+
+  <p>
+    All files concerning this project may be found <a href="source.zip">here</a>. This is project is licensed under the <a href="http://www.wtfpl.net">WTFPL</a>.
+  </p>
+
+  <hr />
+
+  <canvas id="triangle" width="490" height="194"></canvas>
+
+  <table>
+    <tr>
+      <td>Side <i class="blu">a</i></td>
+      <td><input type="text" id="a" value="" onchange="solve()"></td>
+    </tr>
+    <tr>
+      <td>Side <i class="ylw">b</i></td>
+      <td><input type="text" id="b" value="" onchange="solve()"></td>
+    </tr>
+    <tr>
+      <td>Side <i class="good">c</i></td>
+      <td><input type="text" id="c" value="" onchange="solve()"></td>
+    </tr>
+    <tr>
+      <td>Angle <i>A</i> </td>
+      <td><input type="text" id="A" value="" onchange="solve()"></td>
+    </tr>
+    <tr>
+      <td>Angle <i>B</i> </td>
+      <td><input type="text" id="B" value="" onchange="solve()"></td>
+    </tr>
+    <tr>
+      <td>Angle <i>C</i> </td>
+      <td><input type="text" id="C" value="" onchange="solve()"></td></tr>
+  </table>
+
+  <hr />
+
+  <div id="output">
+    Currently <span class="bad">Offline</span>. For some reason, the script is broken!
+  </div>
+
+  <script type="application/javascript" src="script.js"></script>
 </body>
 </html>
