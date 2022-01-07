@@ -135,10 +135,10 @@ function lawOfCos1(t, keysToFind) {
 	let result = (l1 * l1 + l2 * l2 - h * h) / (2 * l1 * l2)
 	if (result >= -1 && result <= 1) {
 		t[keysToFind] = radToDeg(Math.acos(result))
+		addOutput(`Determined missing angle ${angSyms[i]} via Law of Cosines<p class="in"><i>acos((<i>" + c + "<sup>2</sup> + " + b + "<sup>2</sup> - " + a + "<sup>2</sup>)/(2(" + b + ")(" + c + "))) &asymp; " + result + "&deg;<br />`)
 	} else {
 		// no solution
 	}
-	addOutput("Performed a Law of Cosines: acos((<i>" + c + "<sup>2</sup> + " + b + "<sup>2</sup> - " + a + "<sup>2</sup>)/(2(" + b + ")(" + c + "))) &asymp; " + result + "&deg;<br />")
 	return result
 }
 
