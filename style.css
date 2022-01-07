@@ -1,114 +1,102 @@
-body, html {
-background-color: #333;
-color: #ddd;
-font-family: sans-serif;
-margin: 0;
-padding: 0;
-font-size: 11px;
+*, *::before: *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #111;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+main {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+details > summary {
+  text-decoration: underline;
+  color: #08f;
+  cursor: pointer;
+}
+
+p,
+form,
+details {
+  margin-bottom: 1em;
 }
 
 a {
-color: #08f;
+  color: #08f;
 }
 
 h1 {
-font-size: 36px;
-color: #fff;
-}
-
-hr {
-height: 0;
-color: 0;
-background-color: 0;
-border: 0;
-border-top: solid 1px #111;
-border-bottom: solid 1px #333;
+  font-size: 200%;
+  color: #fff;
+  text-align: center;
 }
 
 i {
-font-style: italic;
-font-family: serif;
-}
-
-sup {
-vertical-align: super;
-}
-
-body {
-width: 760px;
-margin: -21px auto 0 auto;
-padding: 20px 20px;
-background-color: #222;
-border: solid 1px #555;
+  font-style: italic;
+  font-family: serif;
+  font-size: 22px;
 }
 
 input {
-width: 200px;
-background-color: #333;
-border: solid 1px #666;
-color: #ddd;
-font-family: inherit;
-font-size: inherit;
-padding: 5px;
-}
-
-button, #submit {
-background-color: #444;
-border: solid 1px #888;
-color: #fff;
-font-family: inherit;
-font-size: inherit;
-padding: 5px 20px;
-cursor: pointer;
-}
-
-#submit {
-margin: 5px auto 5px auto;
-width: 200px;
-}
-
-header {
-text-align: center;
-}
-
-#output {
-padding: 20px;
-margin-top: 8px;
-background-color: #111;
-border: solid 1px #444;
+  width: 200px;
+  background-color: #222;
+  border: solid 1px #666;
+  color: #ddd;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px;
 }
 
 .bad {
-color: #f00;
+  color: #f00;
 }
 
 .good {
-color: #4f0;
+  color: #4f0;
 }
 
 .ylw {
-color: #ff0;
-}
-
-.link {
-color: #08f;
+  color: #ff0;
 }
 
 .blu {
-color: #08f;
+  color: #08f;
 }
 
-.gry {
-color: #666;
+.in {
+  margin-left: 1em;
 }
 
-#triangle {
-float: right;
-background-color: #111;
-margin-top: 5px;
-border: solid 1px #666;
+canvas {
+  display: block;
+  background: #222;
+  margin: 0 auto;
+  padding: 2px;
 }
 
-p.in {
-margin-left: 20px;
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+form label {
+  margin-right: 1em;
+}
+
+form input {
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+footer > p {
+  text-align: center;
 }
